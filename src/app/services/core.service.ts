@@ -4,9 +4,14 @@ import { IMenu } from '../models/menu';
 @Injectable({
   providedIn: 'root'
 })
-export class UtilsService {
+export class CoreService {
 
-
+  menu: IMenu[] = [ 
+    {
+      titulo: 'Instalação',
+      url: 'instalacao'
+    },
+  ]
 
   constructor() { }
 }

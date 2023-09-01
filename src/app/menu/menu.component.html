@@ -1,1 +1,15 @@
-<p>menu works!</p>
+<div class="row justify-content-center align-items-center m-0 mt-2">
+    <div class="col-md-8">
+        <!-- Conteúdo da sua div centralizada aqui -->
+        <div class="text-center">
+            <h1>Conteúdos sobre NGRX em Angular </h1>
+            <p>ano 2023+ | Angular 16^</p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center">
+            <ng-container  *ngFor="let item of core.menu">
+                <button type="button" [routerLink]="item.url" class="btn btn-outline-primary m-1">{{item.titulo}}</button>
+            </ng-container>
+        </div>
+    </div>
+</div>

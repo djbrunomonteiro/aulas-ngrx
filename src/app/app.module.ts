@@ -13,14 +13,14 @@ import { MenuComponent } from './menu/menu.component';
   declarations: [
     AppComponent,
     InstallComponent,
-    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() })
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
+    MenuComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
