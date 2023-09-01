@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IMenu } from '../models/menu';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +14,9 @@ export class CoreService {
     },
   ]
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getMarkdown(url: string){
+    return this.http.get(url)
+  }
 }
